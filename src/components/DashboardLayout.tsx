@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { Button } from "@/components/ui/button";
-import { Home, List, LogOut, Motorcycle, Plus, Settings } from "lucide-react";
+import { Home, List, LogOut, Bike, Plus, Settings } from "lucide-react";
 
 type NavItemProps = {
   icon: React.ReactNode;
@@ -40,7 +39,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children, currentPage
     { id: "dashboard", icon: <Home size={20} />, text: "Dashboard", path: "/dashboard" },
     { id: "items", icon: <List size={20} />, text: "Itens", path: "/items" },
     { id: "new-item", icon: <Plus size={20} />, text: "Novo Item", path: "/items/new" },
-    { id: "maintenance", icon: <Motorcycle size={20} />, text: "Manutenções", path: "/maintenance" },
+    { id: "maintenance", icon: <Bike size={20} />, text: "Manutenções", path: "/maintenance" },
     { id: "settings", icon: <Settings size={20} />, text: "Configurações", path: "/settings" },
   ];
 

@@ -1,8 +1,8 @@
-
 import React from "react";
 import DashboardLayout from "@/components/DashboardLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Motorcycle, Tool, Wrench, ShoppingBag, Calendar, Users } from "lucide-react";
+import { Bike, Wrench, ShoppingBag, Calendar, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
 // Sample data for the chart
@@ -67,7 +67,7 @@ const Dashboard = () => {
             title="Motos na Oficina"
             value="5"
             description="2 aguardando peças"
-            icon={<Motorcycle className="h-4 w-4 text-white" />}
+            icon={<Bike className="h-4 w-4 text-white" />}
             iconColor="bg-toka-secondary"
           />
           <DashboardCard

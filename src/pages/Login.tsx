@@ -4,7 +4,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Motorcycle } from "lucide-react";
+import { Bike } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState("admin@toka.com");
@@ -22,7 +22,7 @@ const Login = () => {
         <div className="text-center mb-6">
           <div className="flex justify-center">
             <div className="bg-primary p-3 rounded-full">
-              <Motorcycle className="text-white h-8 w-8" />
+              <Bike className="text-white h-8 w-8" />
             </div>
           </div>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900">
