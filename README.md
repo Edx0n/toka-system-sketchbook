@@ -100,6 +100,5 @@ npm run dev
 - Ambos os serviços devem estar rodando para o sistema funcionar
 - Para parar os serviços, feche as janelas do terminal ou pressione `Ctrl+C`
 
----
+![image](https://github.com/user-attachments/assets/e7ae3346-ba84-4196-b984-e36793412b2f)
 
-**Desenvolvido por Edson Cabral** 🏍️ 
