@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# 🚀 Como Iniciar o TOKA-SYSTEM
 
-## Project info
+## Scripts de Inicialização Automática
 
-**URL**: https://lovable.dev/projects/94dbd889-cc3d-41bc-a981-8294ea00f908
+Este projeto possui dois scripts `.bat` para facilitar a inicialização:
 
-## How can I edit this code?
+### 📋 `start.bat` - Inicialização Completa
+**Use este script na primeira vez ou quando precisar reinstalar dependências.**
 
-There are several ways of editing your application.
+**O que ele faz:**
+- ✅ Verifica se Node.js e npm estão instalados
+- ✅ Instala dependências do frontend (se necessário)
+- ✅ Instala dependências do backend (se necessário)
+- ✅ Cria arquivo `.env` para o backend (se não existir)
+- ✅ Inicia o backend em uma janela separada
+- ✅ Inicia o frontend na janela principal
 
-**Use Lovable**
+**Como usar:**
+1. Dê duplo clique no arquivo `start.bat`
+2. Aguarde a instalação das dependências
+3. O projeto será iniciado automaticamente
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/94dbd889-cc3d-41bc-a981-8294ea00f908) and start prompting.
+### ⚡ `start-quick.bat` - Inicialização Rápida
+**Use este script para iniciar rapidamente quando as dependências já estão instaladas.**
 
-Changes made via Lovable will be committed automatically to this repo.
+**O que ele faz:**
+- ✅ Inicia o backend em uma janela separada
+- ✅ Inicia o frontend na janela principal
 
-**Use your preferred IDE**
+**Como usar:**
+1. Dê duplo clique no arquivo `start-quick.bat`
+2. O projeto será iniciado imediatamente
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🌐 URLs dos Serviços
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Após a inicialização, você pode acessar:
 
-Follow these steps:
+- **Frontend:** http://localhost:8080 (ou 8081 se a porta 8080 estiver ocupada)
+- **Backend:** http://localhost:3001
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🔧 Requisitos
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Antes de usar os scripts, certifique-se de ter instalado:
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Node.js** (versão 16 ou superior)
+- **npm** (vem com o Node.js)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Como verificar se está tudo instalado:
+```bash
+node --version
+npm --version
+```
+
+## 🛠️ Comandos Manuais (Alternativa)
+
+Se preferir usar comandos manuais:
+
+### 1. Instalar dependências:
+```bash
+# Frontend
+npm install
+
+# Backend
+cd src/api
+npm install
+cd ../..
+```
+
+### 2. Iniciar o projeto:
+```bash
+# Terminal 1 - Backend
+cd src/api
+npm run dev
+
+# Terminal 2 - Frontend
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🚨 Solução de Problemas
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Erro: "Node.js não encontrado"
+- Instale o Node.js em: https://nodejs.org/
+- Reinicie o computador após a instalação
 
-**Use GitHub Codespaces**
+### Erro: "Porta já em uso"
+- O Vite automaticamente tentará a próxima porta disponível
+- Verifique as URLs no terminal
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Erro: "Módulo não encontrado"
+- Execute o `start.bat` para reinstalar as dependências
 
-## What technologies are used for this project?
+### Backend não conecta
+- Verifique se o MongoDB está rodando (se estiver usando)
+- Verifique se o arquivo `.env` foi criado corretamente
 
-This project is built with:
+## 📝 Notas
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- O backend roda na porta **3001**
+- O frontend roda na porta **8080** (ou 8081)
+- Ambos os serviços devem estar rodando para o sistema funcionar
+- Para parar os serviços, feche as janelas do terminal ou pressione `Ctrl+C`
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/94dbd889-cc3d-41bc-a981-8294ea00f908) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Desenvolvido por Edson Cabral** 🏍️ 
